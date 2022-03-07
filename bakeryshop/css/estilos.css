@@ -1,0 +1,141 @@
+html {
+  font-size: 15px; }
+
+/*Estilos bloque bienvenidos*/
+.bienvenidos {
+  background: url("../images/torta-de-chocolate-con-las-nueces-en-un-fondo-negro-117801241.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden; }
+
+.navbar-dark {
+  background: rgba(0, 0, 0, 0.75); }
+
+.navbar-dark .navbar-brand {
+  color: #fdfdfd;
+  font-size: 1.3rem;
+  text-transform: uppercase; }
+
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.98); }
+
+.navbar-toggler{
+  font-size: 1.6rem;
+  color: #fff !important; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  text-align: center;
+  padding: .4rem;
+  text-transform: uppercase; }
+
+.navbar-dark .navbar-nav .open > .nav-link, .navbar-dark .navbar-nav .open > .nav-link:focus, .navbar-dark .navbar-nav .open > .nav-link:hover, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .active > .nav-link:focus, .navbar-dark .navbar-nav .active > .nav-link:hover, .navbar-dark .navbar-nav .nav-link.open, .navbar-dark .navbar-nav .nav-link.open:focus, .navbar-dark .navbar-nav .nav-link.open:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.active:focus, .navbar-dark .navbar-nav .nav-link.active:hover {
+  color: rgba(255, 255, 255, 0.95);
+  background: #EE95A2; }
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  background: #EE95A2; }
+
+#menuprincipal {
+  clear: both; }
+
+.texto-bienvenido {
+  color: #fff;
+  margin-top: 9rem; }
+
+.colorCursiva {
+  color: hotpink; }
+
+.etiqueta-precio-pasteles{
+  background: rgba(238,149,162, 0.75);
+}
+
+.etiqueta-cantidad-admin{
+  background: rgba(220,20,60, 0.75);
+      width: 30%;
+}
+
+.line-galeria{
+    content: "";
+    background: hotpink;
+    width: 260px;
+    height: 2px;
+    left: 50%;
+    bottom: 57px;
+    margin-left: -125px;
+    position: relative;
+}
+
+.texto-bienvenido > h1 {
+  background: rgba(0, 0, 0, 0.75);
+   }
+
+.image-perfil{
+      width: 50%;
+    height: 50%;
+}
+
+.btn-primary {
+  background-color: #EE95A2;
+  border-color: #b93e24;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+  text-transform: uppercase; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #C53414;
+  border-color: #EE95A2; }
+
+/*Estilos bloque Quienes somos*/
+.quienes-somos, .section-formulario {
+  background: #EE95A2;
+  color: #fff; }
+
+/*Estilos bloque Servicios*/
+.servicios .fa {
+  color: #EE95A2;
+  font-size: 6rem; }
+
+.servicios h3 {
+  font-weight: bold; }
+
+/*Estilos Ultimos proyectos*/
+.ultimos-proyectos {
+  background: #000000;
+  color: #fff; }
+
+.ultimos-proyectos a {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1.5rem; }
+
+.ultimos-proyectos img {
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+  min-width: 100%; }
+
+.ultimos-proyectos a:hover img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5); }
+
+/**Estilos bloque Pie de pagina*/
+.footer {
+  color: #fff;
+  background: #222222; }
+
+/*EMPIEZAN LOS MEDIAS QUERIES*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  #menuprincipal {
+    clear: inherit; }
+
+  .bienvenidos {
+    background: url("../images/torta-de-chocolate-con-las-nueces-en-un-fondo-negro-117801241.jpg");
+    background-size: cover; } }
+
+/*# sourceMappingURL=estilos.css.map */
