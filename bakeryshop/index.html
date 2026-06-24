@@ -1,297 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bakery Puebla - Pastelería artesanal en Puebla. Pasteles, postres y repostería de alta calidad desde 2013.">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Carga de fuentes de Font  Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- Carga de estilos css personalizados -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
-    <title>Bakery Puebla Shop</title>
+    <title>Bakery Puebla | Pastelería Artesanal</title>
   </head>
   <body>
 
-     <section class="bienvenidos">
-    <header class="encabezado">
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
-    <!--  -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          Bakery Puebla
+          <img src="images/logo_bakery_puebla.png" alt="Bakery Puebla Logo" width="40">
+        </a>
 
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
-        <div class="container">
-
-          <a class="navbar-brand" href="#">Bakery Puebla <img src="images/logo_bakery_puebla.png" alt="logo" width="40" class="img-fluid my-auto"></a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuprincipal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <div class="nav-actions d-flex align-items-center order-lg-last">
+          <button class="btn-icon" id="btn-favorites-nav" aria-label="Ver favoritos">
+            <i class="fa fa-heart-o"></i>
+            <span class="badge-count" id="favorites-count" style="display:none">0</span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="menuprincipal">
-            
-          <ul class="nav navbar-nav">
+          <button class="btn-icon" id="btn-cart" aria-label="Ver carrito">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge-count" id="cart-count" style="display:none">0</span>
+          </button>
+        </div>
 
-             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio</a>
-             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios"> Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galeria">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pastelero.html">Pastelero</a>
-            </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuprincipal" aria-controls="menuprincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuprincipal">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
-
-          </div>
-
         </div>
-
-      </nav>
-
-      <!--  -->
-
-    </header>
-
-      <div class="texto-bienvenido text-center">
-        <p class="h1 colorCursiva" style="font-family: 'Pacifico', cursive;">Pastelería de Puebla</p>
-        <!-- <p class="h2">Bievenidos a nuestra pastelería</p> -->
-        <h1 class="display-4 mb-3">ENCANTADOS DE CONOCERTE</h1>
-        <a href="#formulario" class="btn btn-primary btn-lg">Pide ahora tu pastel</a>
       </div>
+    </nav>
 
-     </section>
-
-     <section class="quienes-somos  py-2 text-center" id="nosotros">
-
-      <div class="container">
-        <img src="images/logo_quienes_somos.png" alt="Nosotros" width="181" class="img-fluid my-auto mb-2 ">
-        <h2 class="h3">¿QUIENES SOMOS?</h2>
-        <p>Somos una empresa dedicada a la producción y distribución de productos de panadería, pastelería y repostería de alta calidad y sabor; fundada en 2013 en la ciudad de Puebla, ponemos a tu alcance una gran variedad de pasteles y adaptado a tus necesidades,</p>
-          <a href="#" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#quienes-somos">MAS INFORMACIÓN</a>
-      </div>
-
-     </section>
-
-
-     <section class="servicios py-2 text-center my-5" id="servicios">
-
-       <div class="container" >
-      <h2 class="h3 mb-3">NUESTROS SERVICIOS</h2>
-
-      <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-            <h3 class="h5">RESPOSTERÍA</h3>
-            <p>Gran variedad de pasteles de todoas las formas y sabores.</p>
-           </div>
-
-             <div class="col-md-4">
-             <i class="fa fa-coffee " aria-hidden="true"></i>
-             <h3  class="h5">VENTA DE CAFÉ</h3>
-             <p>Consigue tu café favorito y fresco.</p>
-           </div>
-
-             <div class="col-md-4">
-              <i class="fa fa-check-square-o" aria-hidden="true"></i>
-              <h3  class="h5">PASTEL PERSONALIZADO</h3>
-              <p>Personaliza tu pastel favorito. Infinitas Posibilidades.</p>
-           </div>
-      </div>
-
-      </div>
-
-     </section>
-
-    <section class="ultimos-proyectos py-2 text-center" id="galeria">
-      <div class="container">
-
-        <div class="container" >
-          <div class="row">
-            <p class="h3 colorCursiva mt-5 titulo-galeria" style="font-family: 'Pacifico', cursive;">G A L E R Í A</p>
-            <h3 class="mb-3 mt-3">DISFRUTA NUESTRA SELECCIÓN</h3>
-            <div class="line-galeria"></div>
-          </div>
-        </div>
-
-     <div class="row">
-
-          <div class="col-md-4">
-                 <a href="#" class="mb-1">
-                  <img src="images/pastel-velvet.jpg" alt="Proyecto 1" width="290" class="img-fluid m-x-auto">
-                 </a>
-                 <div class="rounded etiqueta-precio-pasteles">
-                   <p>Red Velvet</p>
-                   <p>$350.00</p>
-                 </div>
-          </div>
-
-          <div class="col-md-4">
-                  <a href="#" class="mb-1">   <img src="images/pastel-capuchino.jpg" alt="Proyecto 2" width="290" class="img-fluid m-x-auto">
-                  </a>
-                  <div class="rounded etiqueta-precio-pasteles">
-                    <p>Capuchino</p>
-                    <p>$490.00</p>
-                  </div>
-          </div>
-          <div class="col-md-4">
-                   <a href="#" class="mb-1">  <img src="images/pastel-chocolate.jpg" alt="Proyecto 3" width="290" class="img-fluid m-x-auto">
-                   </a>
-                   <div class="rounded etiqueta-precio-pasteles">
-                     <p>Chocolate</p>
-                     <p>$320.00</p>
-                   </div>
-                 </div>
-          <div class="col-md-4">
-                   <a href="#" class="mb-1">  <img src="images/pastel-cookies.jpg" alt="Proyecto 4" width="290" class="img-fluid m-x-auto">
-                   </a>
-                   <div class="rounded etiqueta-precio-pasteles">
-                     <p>Cookies and Cream</p>
-                     <p>$420.00</p>
-                   </div>
-          </div>
-          <div class="col-md-4">
-                    <a href="#" class="mb-1"> <img src="images/pastel-mazapan.jpg" alt="Proyecto 5" width="290" class="img-fluid m-x-auto">
-                    </a>
-                    <div class="rounded etiqueta-precio-pasteles">
-                      <p>Mazapan</p>
-                      <p>$400.00</p>
-                    </div>
-                </div>
-          <div class="col-md-4">
-                    <a href="#" class="mb-1"> <img src="images/pastel-capuchino.jpg" alt="Proyecto 6" width="290" class="img-fluid m-x-auto">
-                    </a>
-                    <div class="rounded etiqueta-precio-pasteles">
-                    <p>Capuchino</p>
-                    <p>$350.00</p>
-                    </div>
-                </div>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center">
+        <p class="hero-subtitle font-pacifico">Pastelería de Puebla</p>
+        <h1 class="hero-title">ENCANTADOS DE CONOCERTE</h1>
+        <p class="hero-description">Repostería artesanal con los mejores ingredientes desde 2013</p>
+        <div class="hero-cta">
+          <a href="#catalogo" class="btn btn-primary btn-lg">Ver Catálogo</a>
+          <a href="#formulario" class="btn btn-outline-light btn-lg">Pide tu Pastel</a>
         </div>
       </div>
     </section>
 
-    <section class="section-formulario  py-2 text-center">
+    <!-- Stats Bar -->
+    <section class="stats-bar" aria-label="Estadísticas">
+      <div class="container">
+        <div class="row" id="stats-container">
+          <div class="col-6 col-md-3"><div class="skeleton skeleton-stat"></div></div>
+          <div class="col-6 col-md-3"><div class="skeleton skeleton-stat"></div></div>
+          <div class="col-6 col-md-3"><div class="skeleton skeleton-stat"></div></div>
+          <div class="col-6 col-md-3"><div class="skeleton skeleton-stat"></div></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="container">
-          <div class="row">
-            <h3 class="mb-3 mt-3">PIDE TU PASTEL</h3>
-            <div class="line-galeria"></div>
+    <!-- About -->
+    <section class="about" id="nosotros">
+      <div class="container text-center">
+        <div class="reveal">
+          <img src="images/logo_quienes_somos.png" alt="Quiénes Somos" width="150" class="about-logo mb-3">
+          <h2 class="section-title">¿Quiénes Somos?</h2>
+          <div class="section-divider"></div>
+          <p class="about-text mx-auto">Somos una empresa dedicada a la producción y distribución de productos de panadería, pastelería y repostería de alta calidad y sabor. Fundada en 2013 en la ciudad de Puebla, ponemos a tu alcance una gran variedad de pasteles adaptados a tus necesidades, elaborados con los mejores ingredientes y el cariño que nos caracteriza.</p>
+          <a href="#catalogo" class="btn btn-primary mt-3">Conoce Nuestros Productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="servicios">
+      <div class="container text-center">
+        <div class="reveal">
+          <h2 class="section-title">Nuestros Servicios</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row mt-5 g-4">
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+              <h3>Repostería</h3>
+              <p>Gran variedad de pasteles de todas las formas y sabores para cualquier ocasión especial.</p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <i class="fa fa-coffee" aria-hidden="true"></i>
+              <h3>Venta de Café</h3>
+              <p>Consigue tu café favorito, fresco y recién preparado con granos selectos de Veracruz.</p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+              <h3>Pastel Personalizado</h3>
+              <p>Personaliza tu pastel favorito con diseños únicos. Infinitas posibilidades para ti.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" aria-label="Productos Destacados">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="section-accent">Lo Mejor</p>
+          <h2 class="section-title">Productos Destacados</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row mt-5 g-4" id="featured-container">
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="catalog" id="catalogo">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="section-accent">Catálogo</p>
+          <h2 class="section-title">Nuestra Selección</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filters -->
+        <div class="catalog-filters mt-4 reveal">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-5">
+              <div class="search-box">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" id="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="category-filters" id="category-filters" role="group" aria-label="Filtrar por categoría"></div>
+            </div>
+            <div class="col-lg-3">
+              <select id="price-filter" class="form-select" aria-label="Filtrar por precio">
+                <option value="all">Todos los precios</option>
+                <option value="0-100">Hasta $100</option>
+                <option value="100-300">$100 - $300</option>
+                <option value="300-500">$300 - $500</option>
+              </select>
+            </div>
           </div>
         </div>
 
-      <div class="container">
+        <!-- Products Grid -->
+        <div class="row mt-4 g-4" id="products-container">
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-md-4"><div class="skeleton skeleton-card"></div></div>
+        </div>
 
-        <div class="row justify-content-center">
-          <form class="row col-lg-8" id="formulario">
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" style="display:none">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <h3>No se encontraron productos</h3>
+          <p>Intenta con otros filtros o términos de búsqueda.</p>
+          <button class="btn btn-primary mt-2" id="btn-clear-filters">Limpiar Filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonios">
+      <div class="container text-center">
+        <div class="reveal">
+          <p class="section-accent">Opiniones</p>
+          <h2 class="section-title text-white">Lo Que Dicen Nuestros Clientes</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row mt-5 g-4" id="testimonials-container">
+          <div class="col-md-6"><div class="skeleton skeleton-testimonial"></div></div>
+          <div class="col-md-6"><div class="skeleton skeleton-testimonial"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form-section" id="formulario">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="section-accent-light font-pacifico">Pedidos</p>
+          <h2 class="section-title text-white">Pide Tu Pastel</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <form class="row col-lg-8 g-3 reveal" id="order-form" novalidate>
             <div class="col-md-6">
-              <label for="inputNombre" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre(s)">
+              <label for="inputNombre" class="form-label">Nombre *</label>
+              <input type="text" class="form-control" id="inputNombre" placeholder="Tu nombre" required minlength="2">
+              <div class="field-error" id="error-nombre"></div>
             </div>
             <div class="col-md-6">
-              <label for="inputApellido" class="form-label">Apellido:</label>
-              <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+              <label for="inputApellido" class="form-label">Apellido *</label>
+              <input type="text" class="form-control" id="inputApellido" placeholder="Tu apellido" required minlength="2">
+              <div class="field-error" id="error-apellido"></div>
             </div>
             <div class="col-md-6">
-              <label for="inputTelefono" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono">
+              <label for="inputTelefono" class="form-label">Teléfono *</label>
+              <input type="tel" class="form-control" id="inputTelefono" placeholder="10 dígitos" required pattern="[0-9]{10}">
+              <div class="field-error" id="error-telefono"></div>
             </div>
             <div class="col-md-6">
-              <label for="inputEmail" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-            </div> 
+              <label for="inputEmail" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="tu@email.com" required>
+              <div class="field-error" id="error-email"></div>
+            </div>
             <div class="col-12">
-              <label for="inputEmail" class="form-label">Descripción/Comentarios:</label>
-              <textarea class="form-control" placeholder="Descripción" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea" class="form-label">Descripción / Comentarios</label>
+              <textarea class="form-control" placeholder="Describe cómo quieres tu pastel..." id="floatingTextarea" rows="3"></textarea>
             </div>
             <div class="col-md-6">
-              <label for="inputState" class="form-label">Sabor:</label>
-              <select id="inputState" class="form-select">
-                <option selected>Escoge tu sabor favorito...</option>
-                <option>Chocolate</option>
-                <option>Capuchino</option>
-                <option>Cookies and cream</option>
-                <option>Mazapan</option>
-                <option>Velvet</option>
+              <label for="inputSabor" class="form-label">Sabor *</label>
+              <select id="inputSabor" class="form-select" required>
+                <option value="" selected>Escoge tu sabor...</option>
               </select>
+              <div class="field-error" id="error-sabor"></div>
             </div>
             <div class="col-md-6">
-              <label for="inputState" class="form-label">Adorno:</label>
-              <select id="inputState" class="form-select">
-                <option selected>Escoge tu adorno favorito...</option>
-                <option>Velas</option>
-                <option>Obleas</option>
-                <option>Rosas</option>
-                <option>Spigas</option>
-                <option>Letras</option>
+              <label for="inputAdorno" class="form-label">Adorno *</label>
+              <select id="inputAdorno" class="form-select" required>
+                <option value="" selected>Escoge tu adorno...</option>
               </select>
+              <div class="field-error" id="error-adorno"></div>
             </div>
             <div class="col-12">
-              <button type="submit" style="background: crimson;" class="btn-submit btn btn-primary w-100 mt-3 mb-3">ENVIAR</button>
+              <button type="submit" class="btn btn-submit btn-primary w-100 mt-2">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Pedido
+              </button>
             </div>
           </form>
         </div>
       </div>
+    </section>
 
-     </section>
-
-    <section id="contacto" class="my-4">
-
+    <!-- Contact -->
+    <section class="contact" id="contacto">
       <div class="container">
-
-        <div class="row">
-            <div class="col-md-6 mt-3 mb-3">
-            
-                <div class="card-header fw-bold">
-                  CONTÁCTANOS
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <div class="contact-card">
+              <h3>Contáctanos</h3>
+              <div class="contact-item">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <div>
+                  <p>Avenida 15 de mayo 4702-A, Col Villa Posada, Puebla.</p>
+                  <p><strong>Horario: 08:00 am a 18:00 pm</strong></p>
                 </div>
-                
-                  <p class="card-text"><i class="fa fa-location-arrow" aria-hidden="true"></i>Avenida 15 de mayo 4702-A, Col Villa Posada.<br><b>Horario de servicio: 08:00 am a 18:00 pm</b></p>
-                  <p class="card-text"><i class="fa fa-envelope" aria-hidden="true"></i>info@bakerypueblashop.com</p>
-                  <p class="card-text"><i class="fa fa-phone" aria-hidden="true"></i>+55 5555-5555</p>
-               
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>info@bakerypueblashop.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+55 5555-5555</p>
+              </div>
             </div>
-
-            <div class="col-md-6 mt-3 mb-3">
-            
-                  <div class="card-header fw-bold">
-                    NEWSLETTER
-                  </div>
-                  <p class="card-text">Suscríbete y recibe las últimas noticias y promociones de Sugar Bakery</p>
-                  <input type="text" class="form-control mb-3" id="inputEmailLetter" placeholder="Email">
-                  <button type="submit" style="background: crimson;" class="btn-submit btn btn-primary w-100">REGISTRARME</button>
-               
+          </div>
+          <div class="col-md-6 reveal">
+            <div class="contact-card">
+              <h3>Newsletter</h3>
+              <p style="color:var(--gray-600)">Suscríbete y recibe las últimas noticias y promociones de Bakery Puebla.</p>
+              <form class="newsletter-form" id="newsletter-form" novalidate>
+                <input type="email" placeholder="Tu email" aria-label="Email para newsletter" required>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+              </form>
+              <div class="field-error" id="error-newsletter" style="margin-top:8px"></div>
             </div>
+          </div>
         </div>
       </div>
+    </section>
 
-     </section>
-
-    <footer class="footer   py-2 text-center">
-        <div class="container">
-    <p>2022 © Bakery Shop Puebla Todos los derechos reservados</p>
-
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="footer-social mb-3">
+          <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; <span id="current-year"></span> Bakery Shop Puebla. Todos los derechos reservados.</p>
       </div>
     </footer>
 
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar" aria-label="Carrito de compras">
+      <div class="cart-header">
+        <h3><i class="fa fa-shopping-cart"></i> Tu Carrito</h3>
+        <button class="btn-close-cart" id="btn-close-cart" aria-label="Cerrar carrito">&times;</button>
+      </div>
+      <div class="cart-body" id="cart-body"></div>
+      <div class="cart-footer" id="cart-footer" style="display:none">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="cart-total-amount" id="cart-total">$0.00</span>
+        </div>
+        <button class="btn btn-primary w-100" id="btn-checkout">Finalizar Pedido</button>
+      </div>
+    </aside>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-label="Detalle del producto">
+      <div class="modal-content-custom">
+        <button class="modal-close" id="close-product-modal" aria-label="Cerrar">&times;</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-label="Finalizar pedido">
+      <div class="modal-content-custom modal-checkout">
+        <button class="modal-close" id="close-checkout" aria-label="Cerrar">&times;</button>
+        <div id="checkout-body"></div>
+      </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="mock/data.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
