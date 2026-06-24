@@ -200,6 +200,16 @@
     <script src="js/bootstrap.js"></script>
     <script src="mock/users.js"></script>
     <script src="mock/orders.js"></script>
-    <script src="js/panel.js"></script>
+
+    <!-- Panel: módulos cargados en orden de dependencia -->
+    <script src="js/panel/utils.js"></script>
+    <script src="js/panel/state.js"></script>
+    <script src="js/panel/ui.js"></script>
+    <script src="js/panel/auth.js"></script>
+    <script src="js/panel/dashboard.js"></script>
+    <script src="js/panel/orders.js"></script>
+    <script src="js/panel/order-detail.js"></script>
+    <script src="js/panel/calendar.js"></script>
+    <script src="js/panel/events.js"></script>
   </body>
 </html>
